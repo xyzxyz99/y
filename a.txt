@@ -1,0 +1,27 @@
+default.aspx
+
+<div>
+	<div style="font-size:x-large" align="center"> Student Info </div>
+	<br/>
+</div>
+
+create table from top menubar
+add grid view from toolbox
+
+double tap button
+new page popup
+....
+open sql server
+create new database
+name prgdb 
+create table inside that
+go to sever explorer in vscode
+right clk add connection
+.....
+void button(code begins from here)
+ sqlConnection con = new sqlConnection("paste link")
+con.Open();
+sqlCommand comm= new sqlCommand("insert into tblname values('"+int.Parse(TextBox1.Text)+"','"+TextBox1.Text+"','"++"','"+double.Parse+(TextBox3.Text)"',,'"+TextBox4.Text+"')", con);
+comm.ExecuteNonQuery();
+con.Close();
+ScriptManager.RegisterStartupscript(this,this.GetType(),"script", "alert('successfully inserted');", true);
